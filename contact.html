@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"     />
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"   crossorigin="anonymous" ></script>
+    <title>contact us</title>
+</head>
+<body>
+     <section id="contact">
+        <div class="container-lg">
+                <div class="row justify-content-center my-5 g-4">
+                <div class="col-lg-6">
+               <div class="text-center">
+                <p class="text-dark"> Reach us <br> directly vai whatsapp....</p>
+            </div>
+                    <form id="messageForm" class="card p-4 shadow-sm">
+                        <label for="name" class="form-label">Your name</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-arrow-down-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g Ravishing collection" required>
+                          </div>
+                        
+                        <label for="number" class="form-label">Your number</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                    
+                               <i class="bi bi-telephone-fill"></i>
+                            </span>
+                         <input type ="text" class="form-control" id="number" placeholder="e.g 074556632" required>
+
+
+                        </div>
+
+                        <label for="subject" class="form-label">What is your question ?</label>
+                        <div class="input-group">
+                             <span class="input-group-text">
+
+                                <i class="bi bi-chat-left-text-fill"></i>
+
+                            </span>
+                           <select class="form-select" id="subject">
+                            <option value="pricing"selected>Pricing Query</option>  
+                            <option value="content" >Content Query</option>
+                            <option value="other" >other</option>
+                        </select>
+                        </div>
+                       
+
+                        
+                        <div class="form-floating mb-1 mt-2">
+                          <textarea id="query" class="form-control" style="height: 140px;"></textarea>
+                          <label for="query" >Your query.....</label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-success w-100">send via whatsapp</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+     <script src="ravi.js"></script>
+</body>
+</html>

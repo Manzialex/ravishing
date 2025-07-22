@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"     />
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"   crossorigin="anonymous" ></script>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="ravi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Ravishing</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ravishing </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active " onclick="setActive(event)" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="setActive(event)" href="#">About us</a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#productarea" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            perfumes
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#productarea">Men</a></li>
+            <li><a class="dropdown-item" href="#">Women</a></li>
+            <li><a class="dropdown-item" href="#">Unisex</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="setActive(event)" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            jewery
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#jeweryarea">Necklaces</a></li>
+            <li><a class="dropdown-item" href="#jeweryarea">Watches</a></li>
+            <li><a class="dropdown-item" href="#jeweryarea">glasses</a></li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" onclick="setActive(event)" href="#"> reviews</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link"  onclick="setActive(event)" href="contact.html">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <section class="section-1">
+      <div class="slide-area owl-carousel" id="content-right">
+        <div
+          class="single-slider d-flex align-items-center"
+          data-bgimg="images/slider/slider2.jpg"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 "> <!--offset-md-6-->
+                <div class="slide-content">
+                  <h1 id="men">Ravishing</h1>
+                  <h2>Collection</h2>
+                  <p>
+                    The rich aromatic notes of rosemary and nerolu combined with
+                    the sophistication of tonka beans and white beans and white
+                    woods to create the perfect accompaniment for the suited
+                    look
+                  </p>
+                  <a href="#" class="button btn mb-2" id="button" onclick="press()"
+                    >Shop now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div  class="single-slider d-flex align-items-center d-none" data-bgimg="images/slider/slider3.jpg" >
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 offset-md-6">
+                <div class="slide-content" id="slidecontent">
+                  <h1>Mens Collection</h1>
+                  <h2 id="men">Wild stone</h2>
+                  <p>
+                    The rich aromatic notes of rosemary and nerolu combined with
+                    the sophistication of tonka beans and white beans and white
+                    woods to create the perfect accompaniment for the suited
+                    look
+                  </p>
+                  <a href="#" class="button btn" id="butn">Shop now </a>
+                  <p id="para"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+     <section class="product-area" id="productarea">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="section_title">
+              <h3>New Products</h3>
+              <div class="product-link">
+                <ul class="product-nav">
+                  <i class="bi bi-arrow-left-short d-none d-md-block" onclick="scrollPrev()"></i>
+                  <li>
+                    <a href="#unise" class="tab-links " onclick="opentab('mann')">men</a>
+                  </li>
+                  <li>
+                    <a href="#wome" class="tab-links active-link" onclick="opentab('women')">women</a>
+                  </li>
+                  <li >
+                  <a href="#unise" class="tab-links" onclick="opentab('unisex')">Unisex</a>
+                    
+                  <!--<p  class="tab-links" onclick="opentab('unisex')"> unisex</p>-->
+                  </li>
+                  <i class="bi bi-arrow-right-short d-none d-md-block" onclick="scrollNext()"></i>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="tab-content">
+         
+          <div class="tab-panel " id="mann">
+            <div class="row">
+              <div class="carousel-wrapper">
+              <div class="product_carousel" id="productcarousel">
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Men/1-1.png" alt="" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Men/1-2.png" alt="" />
+                        </a>
+
+                        <div class="onhover_list">
+                          <ul>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart2">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <figcaption class="product_content">
+                          <h4 class="product_name">Jaguar Men Classic EDT</h4>
+                          <div class="price_box">
+                            <span class="old_price">Ug 40000</span>
+                            <span class="new_price">Ug 32000</span>
+                          </div>
+                          <!--
+                          <div class="product_rating">
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>-->
+                        </figcaption>
+                      </div>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Men/2-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Men/2-2.png" />
+                        </a>
+                        <div class="onhover_list">
+                          <ul>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart2">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Versace men Dylan</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product" id="singleProduct">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Men/3-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Men/3-2.png" />
+                        </a>
+                        <div class="onhover_list">
+                          <ul>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart2">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">GIORGIO ARMANI Aqua</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Men/4-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Men/4-2.png" />
+                        </a>
+                        <div class="onhover_list">
+                          <ul>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart2">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Dunhill Men Icon elit</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Men/5-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Men/5-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Paco Rabanne Men Invictus</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Men/6-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Men/6-2.png" />
+                        </a>
+                        <div class="onhover_list">
+                          <ul>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart2">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Carolina Herrera Bad Boy</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div> 
+         <div class="tab-panel active-tab" id="women">
+            <div class="row">
+              <div class="product_carousel" id="productcarousel">
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Women/1-1.png" alt="" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Women/1-2.png" alt="" />
+                        </a>
+
+                        <div class="onhover_list">
+                          <ul>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <figcaption class="product_content">
+                          <h4 class="product_name">Jaguar Men Classic EDT</h4>
+                          <div class="price_box">
+                            <span class="old_price">Ug 40000</span>
+                            <span class="new_price">Ug 32000</span>
+                          </div>
+                          <!--
+                          <div class="product_rating">
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>-->
+                        </figcaption>
+                      </div>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Women/2-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Women/2-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Versace men Dylan</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Women/3-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Women/3-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">GIORGIO ARMANI Aqua</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Women/4-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Women/4-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Dunhill Men Icon elit</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Women/5-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Women/5-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Paco Rabanne Men Invictus</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+
+                        <!---
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Women/6-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Women/6-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Carolina Herrera Bad Boy</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+
+                        <!---
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="unisex">
+            <div class="row">
+              <div class="product_carousel" id="singleProduct">
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Unisex/1-1.png" alt="" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Unisex/1-2.png" alt="" />
+                        </a>
+
+                        <div class="onhover_list">
+                          <ul>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                            <li class="add_to_cart">
+                              <a href="#" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <figcaption class="product_content">
+                          <h4 class="product_name">Jaguar Men Classic EDT</h4>
+                          <div class="price_box">
+                            <span class="old_price">Ug 40000</span>
+                            <span class="new_price">Ug 32000</span>
+                          </div>
+                          <!--
+                          <div class="product_rating">
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>-->
+                        </figcaption>
+                      </div>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Unisex/2-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Unisex/2-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Versace men Dylan</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Unisex/3-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Unisex/3-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">GIORGIO ARMANI Aqua</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Unisex/4-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Unisex/4-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Dunhill Men Icon elit</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Unisex/5-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Unisex/5-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Paco Rabanne Men Invictus</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+                <div class="col-lg-3">
+                  <article class="single_product">
+                    <figure>
+                      <div class="product-thumb">
+                        <a href="#" class="primary_img">
+                          <img src="images/products/Unisex/6-1.png" />
+                        </a>
+                        <a href="#" class="secondary_img">
+                          <img src="images/products/Unisex/6-2.png" />
+                        </a>
+                      </div>
+                      <figcaption class="product_content">
+                        <h4 class="product_name">Carolina Herrera Bad Boy</h4>
+                        <div class="price_box">
+                          <span class="old_price">Ug 40000</span>
+                          <span class="new_price">Ug 32000</span>
+                        </div>
+
+                        <!--
+                        <div class="product_rating">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>-->
+                      </figcaption>
+                    </figure>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section class="banner_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <figure class="single_banner">
+              <div class="banner_thumb">
+                <a href="#">
+                   <img src="images/banner/banner1.jpg" />
+                </a>
+              </div>
+              <div class="banner_content">
+                <h3>sale up to</h3>
+                <h2>70%</h2>
+                <p>deadrants</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-xl-4">
+            <figure class="single_banner">
+              <div class="banner_thumb">
+                <a href="#">
+                  <img src="images/banner/banner2.jpg" />
+                </a>
+              </div>
+              <div class="banner_content">
+                <h3>sale up to</h3>
+                <h2>30%</h2>
+                <p>perfumes</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-xl-4">
+            <figure class="single_banner">
+              <div class="banner_thumb">
+                <a href="#">
+                  <img src="images/banner/banner1.jpg" />
+                </a>
+              </div>
+              <div class="banner_content">
+                <h3>sale up to</h3>
+                <h2>50%</h2>
+                <p>body spray</p>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section  class="jewery-area" id="jeweryarea">
+      <div class="container">
+    <h3>our jewery <br> <span>shop by category</span></h3>
+    <p>Ravishing collections feature the world’s finest diamonds and unparalleled craftsmanship—signatures of the House for almost two centuries.</p>
+    <div class="jewery-image">
+      <figure>
+        <img src="images/testimonial/jewery1.jpg" alt="jewery image" />
+        <figcaption class="jewery_caption">
+          <a href="#">Necklaces</a>
+        </figcaption>
+
+      </figure>
+      <figure>
+        <img src="images/testimonial/jewery2.jpg" alt="jewery image" />
+        <figcaption class="jewery_caption">
+        <a href="#"> Earrings</a> 
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="images/testimonial/jewery3.jpg" alt="jewery image" />
+        <figcaption class="jewery_caption">
+         <a href="#">Bracelets</a> 
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="images/testimonial/rings.jpg" alt="jewery image" />
+        <figcaption class="jewery_caption">
+         <a href="#">Rings</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="images/testimonial/jewery4.jpg" alt="jewery image" />
+        <figcaption class="jewery_caption">
+       <a href="#">Watches</a>   
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="glasses-side">
+      <div>
+        <h3>Ravishing Sunglasses</h3>
+        <p class="text-start">
+          Our new collection of
+          sunglasses draws inspiration from signature Ravishing 
+           jewelry collections: T by Tiffany, Hard Wear by Tiffany and Return to Tiffany®. Discover inventive designs offering a new perspective on our most iconic creations.
+        </p>
+        <a href="#">Shop now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="images-side">
+        <img src="images/testimonial/spects.jpg" class="d-none d-md-block" alt="glasses image" />
+         <img src="images/testimonial/jewery5.jpg" class="d-none d-md-block" alt="glasses image" />
+      </div>
+     
+    </div>
+     
+    </div>
+   </section>
+
+     <section class="blog_section">
+      <div class="container">
+        <h3 class="title">From our blog</h3>
+        <div class="row justify-content align-items-center g-5">
+          <div class="col-lg-4">
+            <div class="blog_thumb">
+              <a href="#">
+              <img src="images/blog/blog4.jpg">
+              </a>
+              <figcaption class="blog_content">
+                <h4>Flavours of Perfume</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
+                  excepturi cumque nulla saepe. Error, rem odio perferendis
+                  ullam facere veniam commodi minima delectus velit at
+                  obcaecati. Nam dolorem eligendi voluptates.
+                </p>
+                <p class="read-more ">read more...</p>
+              </figcaption>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog_thumb">
+              <a href="#">
+                <img src="images/blog/blog2.jpg" />
+              </a>
+              <figcaption class="blog_content">
+                <h4>Divine of India</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
+                  excepturi cumque nulla saepe. Error, rem odio perferendis
+                  ullam facere veniam commodi minima delectus velit at
+                  obcaecati. Nam dolorem eligendi voluptates.
+                </p>
+                <p class="read-more">read more...</p>
+              </figcaption>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog_thumb">
+              <a href="#">
+                <img src="images/blog/blog1.jpg" />
+              </a>
+              <figcaption class="blog_content">
+                <h4>Wardrobe Collection</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
+                  excepturi cumque nulla saepe. Error, rem odio perferendis
+                  ullam facere veniam commodi minima delectus velit at
+                  obcaecati. Nam dolorem eligendi voluptates.
+                </p>
+                <p class="read-more">read more...</p>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="footer ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footwer_log">
+              <h4 class="text-white">Ravishing</h4>
+              <p class="mb-4 mt-4 text-secondary" >
+                Get all types of perfume from us within 2 day delivery. We can
+                even order the perfumes which are not in our database. To do
+                that kindly send a E-mail to the company's mail id.
+              </p>
+              <a href="#" class="text-secondary">
+                Address : International Business Center, Kampala Uganda. <br />
+
+                Email : alex@gmail.com.<br />
+
+                Phone : +256 8888884444
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <h3>Information</h3>
+            <div class="footer_list">
+              <ul>
+                <li><a href="#" class="text-secondary">About us</a></li>
+
+                <li><a href="#" class="text-secondary">Prices Drop</a></li>
+
+                <li><a href="#" class="text-secondary">New Products</a></li>
+
+                <li><a href="#" class="text-secondary">Best Sales</a></li>
+
+                <li>
+                  <a href="#" class="text-secondary">terms & condition</a>t
+                </li>
+
+                <li><a href="#" class="text-secondary">order History</a></li>
+
+                <li><a href="#" class="text-secondary">New Products</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h3>Featured products</h3>
+            <div class="feat_pdts">
+              <img src="images/new-product/N4-1.png" />
+              <p>
+                Bvlgari Women Golden <br />
+                ug.40000
+              </p>
+            </div>
+            <div class="feat_pdts">
+              <img src="images/new-product/N3.png" />
+              <p>Bvlgari Women Golden <br />Ug 50000</p>
+            </div>
+            <div class="feat_pdts">
+              <img src="images/new-product/N5-1.png" />
+              <p>Bvlgari Women Golden <br />Ug 50000</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h3>Most viewedproducts</h3>
+            <div class="feat_pdts">
+              <img src="images/new-product/N6-1.png" />
+              <p>Bvlgari Women Golden <br />Ug 50000</p>
+            </div>
+            <div class="feat_pdts">
+              <img src="images/best-product/B1-2.png" />
+              <p>Bvlgari Women Golden <br />Ug 50000</p>
+            </div>
+            <div class="feat_pdts">
+              <img src="images/onsale/D1-1.png" />
+              <p>Bvlgari Women Golden <br />Ug 50000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-top mt-3"></div>
+        <div class="footer_last">
+          <ul>
+            <li><a href="#" class="text-secondary">New Products</a></li>
+
+            <li><a href="#" class="text-secondary">Best Sales</a></li>
+
+            <li><a href="#" class="text-secondary">T & C</a>t</li>
+
+            <li><a href="#" class="text-secondary">order History</a></li>
+
+            <li><a href="#" class="text-secondary">New Products</a></li>
+          </ul>
+        </div>
+        <div class="bg-secondary mb-3">
+          <p class="text-white text-start mb-0 p-2">
+            &copy; 2025 Ravishing Scents. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="ravi.js"></script>
+    <script>
+      document.querySelectorAll("[data-bgimg]").forEach(function (el) {
+        const bg = el.getAttribute("data-bgimg");
+        el.style.backgroundImage = "url(" + bg + ")";
+        el.style.backgroundSize = "cover";
+        el.style.backgroundPosition = "center";
+        el.style.backgroundRepeat = "no-repeat";
+      });
+
+      $(document).ready(function () {
+        setInterval(function () {
+          $("#content-right")
+            .children()
+            .each(function () {
+              $(this).toggleClass("d-none");
+            });
+        }, 5000); // every 3 seconds
+      });
+
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-panel");
+
+  function opentab(tabname){
+
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+
+  }
+   
+   var navlink = document.getElementsByClassName("nav-link");
+
+   function setActive(event) {
+    // Remove active class from all links
+    for (var i = 0; i < navlink.length; i++) {
+      navlink[i].classList.remove("active");
+    }
+    event.currentTarget.classList.add("active");
+  }
+   </script>
+</body>
+</html>
