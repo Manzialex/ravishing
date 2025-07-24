@@ -1,70 +1,38 @@
 
-window.addEventListener('DOMContentLoaded', () => {
-  let index = 0;
-
-  const productcarousel = document.getElementById("productcarousel");
-  const slideWidth = productcarousel.children[0].offsetWidth;
-  const visibleCards = 4; // adjust based on your layout
-  const totalCards = productcarousel.children.length;
-  const maxScrolls = totalCards - visibleCards;
-
-  console.log({ slideWidth, totalCards, maxScrolls });
-
-  function updateSlide() {
-    productcarousel.style.transform = `translateX(-${index * slideWidth}px)`;
-    productcarousel.style.transition = 'transform 0.5s ease-in-out';
-  }
-
-  window.scrollNext = function () {
-    if (index < maxScrolls) {
-      index++;
-      updateSlide();
-    }
-  };
-
-  window.scrollPrev = function () {
-    if (index > 0) {
-      index--;
-      updateSlide();
-    }
-  };
-});
-/*
-
- let index = 0;
-
-  window.onload = function() {
-    const carousel = document.getElementById("productcarousel");
-    const item = carousel.children[0];
-    const slideWidth = item.offsetWidth;
-    const visibleCards = 4;
-    const totalCards = carousel.children.length;
-    const maxScrolls = totalCards - visibleCards;
-
-    console.log({ slideWidth, totalCards, maxScrolls });
+const carousel = document.getElementById("productcarousel");
 
 
-    function updateSlide() {
-      carousel.style.transform = `translateX(-${index * slideWidth}px)`;
-    }
+const Aicons = document.querySelectorAll(".product-nav i");
 
-    window.scrollNext = function() {
-      if (index < maxScrolls) {
-        index++;
-        updateSlide();
-      }
-    };
-   
+Aicons.forEach(icon =>{
+  icon.addEventListener("click", ()=>{
+    const direction = icon.classList.contains("bi-arrow-right-short") ? 1 : -1;
+    const scrollAmount = 300;
+
+    carousel.scrollBy({
+      left: scrollAmount * direction,
+      behavior: "smooth"
+    });
+    console.log(icon);
     
+  })
+})
+/*
+const dragging = (e)=>{
+  e.preventDefault();
+  carousel.scrollLeft = e.pageX;
+  
+}
 
-    window.scrollPrev = function() {
-      if (index > 0) {
-        index--;
-        updateSlide();
-      }
-    };
-  };
+carousel.addEventListener("mouseover", dragging);
+
 */
+
+
+
+
+
+
   document.getElementById("messageForm").addEventListener("submit", function(e){
             e.preventDefault();
 
