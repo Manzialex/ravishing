@@ -402,6 +402,17 @@ figure {
   margin-left: -60px;
   margin-top: 15px;
 }
+.jewery-area h3{
+  font-size: 35px !important;
+  cursor: pointer;
+}
+.jewery-area h3 span{
+  font-size: 40px !important;
+}
+.jewery-area p{
+  font-size: 18px !important;
+  padding: 0 30px !important;
+}
 .blog_content h4 {
   margin-top: 20px;
   text-align: start;
