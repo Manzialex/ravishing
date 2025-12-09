@@ -42,18 +42,20 @@ html{
   line-height: 24px;
   margin-bottom: 12px;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Montserrat,sans-serif";
 }
 .slide-content h2 {
   font-size: 72px;
-  font-family: "Libre Bodoni", serif;
-  text-transform: uppercase;
+  /* font-family: "Libre Bodoni", serif; */
+  font-family: playfair display;
+   text-transform: uppercase; 
   line-height: 72px;
 }
 .slide-content p {
   letter-spacing: 1px;
-  font-family: "Libre Bodoni", serif;
+  /* font-family: "Libre Bodoni", serif; */
+  font-family: "Montserrat,sans-serif";
   line-height: 1.5rem;
   margin: 24px 0 35px;
   text-transform: lowercase;
@@ -291,6 +293,12 @@ figure {
 .banner_area {
   margin-top: 60px;
 }
+.bannerH3{
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #f6692a;
+  letter-spacing: 1.5px;
+}
 .single_banner {
   position: relative;
 }
@@ -299,7 +307,7 @@ figure {
   top: 0;
   color: white;
   text-align: center;
-  margin-left: 27%;
+  margin-left: 30%;
   margin-top: 40%;
 }
 .banner_content h3 {
@@ -308,12 +316,19 @@ figure {
 }
 .banner_content h2 {
   font-size: 70px;
+  color: whitesmoke;
 }
 .banner_content p {
   font-size: 20px;
+  color: whitesmoke;
+}
+.banner_thumb{
+  height: 400px;
 }
 .banner_thumb img {
   width: 98%;
+  height: 400px;
+  object-fit: cover;
 }
 .banner_thumb::before {
   content: "";
